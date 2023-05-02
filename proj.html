@@ -1,0 +1,53 @@
+<!DOCTYPE html>
+<html lang="ar" dir="rtl">
+<head>
+	<meta charset="UTF-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+	<title>BOUSSOUF</title>
+	<link rel="icon" href="img/icone2.png">
+	<link rel="stylesheet" href="projCSS.css">
+	<script defer type="text/javascript" src="projJs.js"></script>
+	<style>
+		@import url('https://fonts.googleapis.com/css2?family=Alkalami&display=swap');
+		@import url(https://fonts.googleapis.com/earlyaccess/thabit.css);
+	</style>
+
+</head>
+<body>
+	<header>
+		<img src="img/biographie.png" alt="logo">
+		<ul>
+			<li>الشخصية </li>
+			<li>حياته</li>
+			<li>أعماله</li>
+			<li>وفاته</li>
+		</ul>
+		<p></p>
+	</header>
+	<aside>
+		<div>
+			<img src="img/moi.jpg" alt="Abdou">
+		</div>
+		<!-- <p>عبد الحفيظ بوصوف</p>	 -->	
+	</aside>
+	<content>
+		
+	</content>
+	<footer>
+		
+	</footer>
+	<script>
+		const a=document.querySelector("header");
+		window.addEventListener("scroll",()=>{
+			if(window.scrollY>1){
+				a.classList.add("shadow");
+				a.classList.remove("shadowrv");
+			}
+			else{
+				a.classList.remove("shadow");
+				a.classList.add("shadowrv");
+			}
+		})
+	</script>
+</body>
+</html>
